@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -37,33 +38,38 @@
                 </div>
             </nav>
         </header>
-
         
 
         <main class="l-main">
 
-    
-
             <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Pauline</span><br></h1>
-                    <h2 class="skills__subtitle">Freelancer / Copywriter</h2>
+
+            <section class="skills section" id="home">
+                <h2 class="section-title">Home</h2>
+
+                <div class="skills__container bd-grid">    
+
+                    <div>
+                        <div class="home__data">
+                            <h1 class="home__title">Hi,<br>I'm Pauline<span class="home__title-color">  Banye</span><br></h1>
+                            <h2 class="skills__subtitle">Freelancer / Copywriter</h2>
+                            
+                            <a href="#contact" class="button">Contact</a><br><br>
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/paulinebanye" class="home__social-icon"><img src="{% static 'images/bxl-linkedin.svg' %}" alt="linkedin"></a>
+                        <a href="mailto:paulinebanye@gmail.com" class="home__social-icon"><img src="{% static 'images/bx-message-rounded-detail.svg' %}" alt="email"></a>
+                        <a href="https://github.com/pauline-banye" class="home__social-icon"><img src="{% static 'images/bxl-github.svg' %}" alt="github"></a>
+                        <a href="https://twitter.com/Pauline_Banye" class="home__social-icon"><img src="{% static 'images/bxl-twitter.svg' %}" alt="github"></a>
+                    </div>
+                </div>
+                </div>
                     
-                    <a href="#contact" class="button">Contact</a>
+                    <div >    
+                        <img src="{% static 'images/pauline2.png' %}" alt="pauline" width="600">
+                    </div>
                 </div>
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/paulinebanye" class="home__social-icon"><img src="{% static 'images/bxl-linkedin.svg' %}" alt="linkedin"></a>
-                    <a href="mailto:paulinebanye@gmail.com" class="home__social-icon"><img src="{% static 'images/bx-message-rounded-detail.svg' %}" alt="email"></a>
-                    <a href="https://github.com/pauline-banye" class="home__social-icon"><img src="{% static 'images/bxl-github.svg' %}" alt="github"></a>
-                     <a href="https://twitter.com/Pauline_Banye" class="home__social-icon"><img src="{% static 'images/bxl-twitter.svg' %}" alt="github"></a>
-                </div>
-
-                <div class="home__img">    
-                    <img src="{% static 'images/pauline2.png' %}" alt="">
-                </div>
+                
             </section>
-
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
@@ -86,7 +92,7 @@
             <section class="work section" id="work">
                 <h2 class="section-title">Work Experience</h2>
 
-                <div class="data__container bd-grid">
+                <div class="bd-grid">
 
                     <div>
                         <div class="skills__data">
@@ -164,7 +170,7 @@
             <section class="work section" id="education">
                 <h2 class="section-title">Education</h2>
 
-                <div class="data__container bd-grid">
+                <div class="bd-grid">
 
                     <div class="row">
 

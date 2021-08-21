@@ -14,7 +14,7 @@ import os, environ
 from pathlib import Path
 import dj_database_url
 import django_heroku
-from decouple import config
+# from decouple import config
 
 env = environ.Env()
 environ.Env.read_env()
@@ -139,6 +139,8 @@ STATICFILES_DIRS = [
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
